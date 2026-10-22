@@ -6,12 +6,8 @@
 <meta name="theme-color" content="#2F6D42">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Bảo trì KCB">
-<title>Bảo trì thiết bị · Kachiboshi</title>
-<link rel="preconnect" href="https://www.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://firestore.googleapis.com" crossorigin>
-<link rel="preload" as="script" href="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js">
-<link rel="preload" as="script" href="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js">
+<meta name="apple-mobile-web-app-title" content="Bảo trì KCB (xem thử)">
+<title>DEMO · 設備保全管理 / Bảo trì thiết bị · Kachiboshi</title>
 <link rel="apple-touch-icon" href="data:image/jpeg;base64,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">
 <style>
 :root{--g:#2F6D42;--g2:#24563A;--gl:#E7F1EA;--y:#EDE34C;--yl:#FBF7C9;--r:#C62828;--rl:#FDECEA;--a:#B26A00;--al:#FFF4D6;--o:#D84315;--ol:#FBE9E7;--tx:#1d2420;--mu:#5f6b63;--bd:#dde3de;--bg:#f3f5f2;--card:#fff}
@@ -226,6 +222,15 @@ table.t th{font-size:13px;color:var(--mu);font-weight:600}
 @media (min-width:700px){.stats{grid-template-columns:repeat(4,minmax(0,1fr))}}
 .h3top{margin-top:18px}
 .rgrid{margin-top:14px}
+
+#demobar{position:sticky;top:0;z-index:50;height:48px;background:#1d2420;color:#fff;display:flex;align-items:center;gap:10px;padding:0 12px;padding-top:env(safe-area-inset-top)}
+#demobar .dl{font-weight:800;font-size:13px;letter-spacing:.5px;color:var(--y);line-height:1.1;white-space:nowrap}
+#demobar .dl small{display:block;color:#b9c4bd;font-weight:500;letter-spacing:0;font-size:11px}
+#demobar .seg{margin-left:auto;display:flex;background:#333c37;border-radius:10px;padding:3px;gap:3px}
+#demobar .seg button{border:0;background:none;color:#cfd8d2;font-weight:700;font-size:14px;border-radius:8px;padding:0 12px;height:36px;cursor:pointer;white-space:nowrap}
+#demobar .seg button.on{background:#fff;color:var(--g2)}
+.top{top:48px}
+@media (max-width:520px){ #demobar .dl small{display:none} #demobar .seg button{padding:0 7px;font-size:12.5px} #demobar .dl{font-size:11px} }
 </style>
 </head>
 <body>
@@ -236,7 +241,7 @@ table.t th{font-size:13px;color:var(--mu);font-weight:600}
 <script>
 "use strict";
 /* ================== CẤU HÌNH ================== */
-const VERSION = "22/10/2026 13:10";
+const VERSION = "22/10/2026 10:50";
 const COLLECTION = "kachiboshibaotrithietbi";
 const firebaseConfig = {
   apiKey: "AIzaSyC6WvHauG-yqzz6h8mDoDKF0Iw0NideXo4",
@@ -257,9 +262,9 @@ const LIB = {
 };
 
 /* ================== NGÔN NGỮ (khoá = tiếng Việt) ================== */
-let LANG = lsGet("kb_lang") || "vi";
+let LANG = lsGet("kb_lang_demo") || "ja";
 function T(s, v){ let r = (LANG === "ja" && JA[s]) || s; if (v) r = r.replace(/\{(\w+)\}/g, (m, k) => v[k] != null ? v[k] : m); return r; }
-function setLang(l){ LANG = l; lsSet("kb_lang", l); document.documentElement.lang = l; render(); }
+function setLang(l){ LANG = l; lsSet("kb_lang_demo", l); document.documentElement.lang = l; render(); }
 
 /* ================== TIỆN ÍCH ================== */
 function lsGet(k){ try { return localStorage.getItem(k); } catch(e){ return null; } }
@@ -334,7 +339,6 @@ const ICONS = {
   out:"M10 4H5v16h5M15 8l4 4-4 4M19 12H9",
   down:"M12 4v12M7 11l5 5 5-5M5 20h14",
   chart:"M4 20V11M10 20V5M16 20v-6M21 20H3",
-  trash:"M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 11v6M14 11v6",
   knit:"M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM4.5 8.5c4.5 1.3 10.5 1.3 15 0M3.2 13.5c5.5 1.6 12 1.6 17.6 0M9 3.6c-1.6 5.3-1.6 11.5 0 16.8M15 3.6c1.4 3.4 1.6 7.2.6 11",
   sliders:"M4 6h16M4 12h16M4 18h16M8 4v4M16 10v4M10 16v4",
   globe:"M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM3 12h18M12 3c2.5 2.5 3.5 5.5 3.5 9s-1 6.5-3.5 9M12 3C9.5 5.5 8.5 8.5 8.5 12s1 6.5 3.5 9",
@@ -361,7 +365,7 @@ const DEF_CFG = {areas:["Xưởng Đan","Xưởng PVC","Xưởng Cao su","Xưở
   products:[],
   parts:["Kim đan","Lưỡi gà","Lò xo kim","Dây curoa","Bạc đạn","Motor","Cảm biến","Rơ-le nhiệt","Phớt bơm","Kim may","Dao cắt","Lọc gió","Xích tải","Khuôn tay"]};
 const GAUGES = ["7G","8G","10G","13G","15G"];                       // loại máy đan
-const isKnit = g => String(g || "").trim().toLowerCase() === "máy đan";
+const isKnit = g => ["máy đan", "編み機"].indexOf(String(g || "").trim().toLowerCase()) >= 0;
 const groupLabel = d => d && d.group ? d.group + (d.gauge ? " " + d.gauge : "") : "";
 const chip = (t, c) => '<span class="chip ' + c + '">' + esc(T(t)) + '</span>';
 /* Trạng thái máy không nhập tay: "Đang hỏng" khi còn sự cố chưa sửa xong */
@@ -813,7 +817,7 @@ VIEWS.incnew = {title: () => V.p.edit ? T("Sửa báo cáo sự cố") : T("Báo
     (F.st === "open" ? '<div class="mu sm" style="margin-top:4px">' + esc(T("Nếu đã tự sửa xong tại chỗ thì chọn \"Đã sửa xong\".")) + '</div>' : "") + '</div>';
   if (F.st === "done") h += '<div class="lc"><label class="req">' + esc(T("Đã sửa như thế nào")) + '</label><textarea oninput="F.fix=this.value">' + esc(F.fix) + '</textarea></div>' + partsSection();
   const old = F.oldPh || [];
-  h += '<div class="lc"><label>' + esc(T("Ảnh hiện trường")) + ' <span class="mu sm">(' + esc(T("không bắt buộc, tối đa 3 ảnh")) + ')</span></label>' +
+  h += '<div class="lc"><label>' + esc(T("Ảnh hiện trường")) + ' <span class="mu sm">(' + esc(T("tối đa 3 ảnh")) + ')</span></label>' +
     (old.length ? '<div class="phs" style="margin-bottom:8px">' + old.map(id => '<div class="ph" id="op_' + id + '"><div class="phload">…</div><button class="x" onclick="F.oldPh.splice(F.oldPh.indexOf(\'' + id + '\'),1);render(true)">' + ic("x") + '</button></div>').join("") + '</div>' : "") +
     photoBox(Math.max(0, 3 - old.length)) + '</div>';
   h += F.edit ? '<button class="btn" onclick="saveInc()">' + ic("ok") + T("LƯU THAY ĐỔI") + '</button>'
@@ -831,7 +835,7 @@ function devSelect(id, val, onch){
 function saveInc(){
   const d = S.dev[F.code];
   if (!d){ toast(T("Chọn thiết bị"), "err"); return; }
-  if (!(F.desc || "").trim() && !PH.length && !(F.oldPh || []).length){ toast(T("Nhập mô tả sự cố"), "err"); return; }
+  if (!(F.desc || "").trim() && !PH.length && !(F.oldPh || []).length){ toast(T("Nhập mô tả hoặc chụp ảnh"), "err"); return; }
   const fix = F.st === "done" ? (F.fix || "").trim() : "";
   if (F.st === "done" && !fix){ toast(T("Nhập nội dung đã sửa như thế nào"), "err"); return; }
   const prow = F.st === "done" ? partsRows() : []; if (!prow) return;
@@ -1315,7 +1319,6 @@ VIEWS.more = {mgr: true, title: () => T("Tài khoản & cài đặt"), html(){
     m("down", "Xuất dữ liệu (Excel/CSV)", "go('export')") +
     m("globe", "Ngôn ngữ", "setLang(LANG==='vi'?'ja':'vi')", LANG === "vi" ? "Tiếng Việt → 日本語" : "日本語 → Tiếng Việt") +
     m("sliders", "Cài đặt danh mục", "go('settings')") +
-    (isAdmin() ? m("trash", "Xoá dữ liệu theo thời gian", "go('purge')", T("Chỉ Quản trị, cần mật khẩu")) : "") +
     m("out", "Đăng xuất", "logout()") + '</div>' + foot();
 }};
 VIEWS.me = {title: () => T("Tôi"), html(){
@@ -1371,62 +1374,6 @@ async function saveAcc(){
   if (!e){ d.createdAt = Date.now(); d.createdBy = S.user.id; }
   put("accounts", id, d, !!e);
   savedMsg(); back();
-}
-
-/* ---- Xoá dữ liệu theo khoảng thời gian (chỉ Quản trị, mật khẩu 112) ---- */
-const PURGE_PW = "112";
-const PURGE_KINDS = [["logs", "Nhật ký bảo trì"], ["incidents", "Sự cố đã xong (kèm ảnh)"], ["parts", "Linh kiện đã thay"]];
-function monthsBetween(a, b){ const out = []; let [y, m] = a.split("-").map(Number); const [y2, m2] = b.split("-").map(Number); while (y < y2 || (y === y2 && m <= m2)){ out.push(y + "-" + pad(m)); if (++m > 12){ m = 1; y++; } } return out; }
-VIEWS.purge = {mgr: true, title: () => T("Xoá dữ liệu theo thời gian"), html(){
-  if (!isAdmin()) return empty("trash", T("Không có quyền"));
-  if (!F.pg){ const d = new Date(); d.setMonth(d.getMonth() - 12); F = {pg: 1, from: ymd(new Date(d.getFullYear(), d.getMonth(), 1)), to: ymd(new Date(d.getFullYear(), d.getMonth() + 1, 0)), kinds: {logs: true, incidents: true, parts: true}, plan: null}; }
-  let h = '<div class="hl" style="background:var(--rl);color:var(--r)">' + esc(T("Dữ liệu bị xoá không khôi phục được. Nên xuất Excel trước khi xoá.")) + '</div>';
-  h += '<div class="grid2"><div class="lc"><label class="req">' + esc(T("Từ ngày")) + '</label><input id="pgf" type="date" value="' + F.from + '" onchange="F.from=this.value;F.plan=null;pgShow()"></div>' +
-    '<div class="lc"><label class="req">' + esc(T("Đến ngày")) + '</label><input id="pgt" type="date" value="' + F.to + '" onchange="F.to=this.value;F.plan=null;pgShow()"></div></div>';
-  h += '<div class="lc"><label>' + esc(T("Loại dữ liệu cần xoá")) + '</label>' + PURGE_KINDS.map(([k, l]) => '<div class="ck ' + (F.kinds[k] ? "on" : "") + '" onclick="F.kinds.' + k + '=!F.kinds.' + k + ';this.classList.toggle(\'on\',F.kinds.' + k + ');F.plan=null;pgShow()"><span class="bx">' + ic("ok") + '</span><span>' + esc(T(l)) + '</span></div>').join("") +
-    '<div class="mu sm">' + esc(T("Không xoá: danh sách máy, kế hoạch, tài khoản, danh mục. Sự cố chưa sửa xong hoặc đang chờ duyệt được giữ lại.")) + '</div></div>';
-  h += '<button class="btn w" onclick="pgCheck()">' + ic("search") + T("Kiểm tra số lượng sẽ xoá") + '</button><div id="pgres" style="margin-top:12px"></div>';
-  return h;
-}, after(){ pgShow(); }};
-function pgShow(){
-  const el = $("#pgres"); if (!el) return;
-  if (!F.plan){ el.innerHTML = ""; return; }
-  const P = F.plan, tot = P.logs.length + P.incidents.length + P.parts.length + P.photos.length;
-  el.innerHTML = '<div class="card"><div class="b" style="margin-bottom:6px">' + esc(T("Từ {a} đến {b} sẽ xoá:", {a: fmtD(F.from), b: fmtD(F.to)})) + '</div>' +
-    '<dl class="info"><dt>' + esc(T("Nhật ký bảo trì")) + '</dt><dd>' + P.logs.length + '</dd><dt>' + esc(T("Sự cố")) + '</dt><dd>' + P.incidents.length + '</dd><dt>' + esc(T("Ảnh")) + '</dt><dd>' + P.photos.length + '</dd><dt>' + esc(T("Linh kiện đã thay")) + '</dt><dd>' + P.parts.length + '</dd></dl></div>' +
-    (tot ? '<div class="lc"><label class="req">' + esc(T("Mật khẩu xoá")) + '</label><input id="pgpw" class="pin" type="password" inputmode="numeric" autocomplete="off"></div>' +
-      '<button class="btn r" onclick="pgRun()">' + ic("trash") + T("XOÁ {n} BẢN GHI", {n: tot}) + '</button>' : empty("ok", T("Không có dữ liệu nào trong khoảng này.")));
-}
-async function pgCheck(){
-  if (!isAdmin()) return;
-  if (!F.from || !F.to || F.from > F.to){ toast(T("Khoảng ngày không hợp lệ"), "err"); return; }
-  if (!PURGE_KINDS.some(([k]) => F.kinds[k])){ toast(T("Chọn ít nhất một loại dữ liệu"), "err"); return; }
-  busy(true);
-  try {
-    const months = monthsBetween(F.from.slice(0, 7), F.to.slice(0, 7)), inRange = x => x.date >= F.from && x.date <= F.to, P = {logs: [], incidents: [], parts: [], photos: []};
-    for (const m of months){
-      if (F.kinds.logs) P.logs.push(...docs("logs", await Q("logs", "month", m).get()).filter(inRange));
-      if (F.kinds.incidents) P.incidents.push(...docs("incidents", await Q("incidents", "month", m).get()).filter(i => inRange(i) && iSt(i) === "done" && isLocked(i)));
-      if (F.kinds.parts) P.parts.push(...docs("parts", await Q("parts", "month", m).get()).filter(inRange));
-    }
-    P.photos = Array.from(new Set(P.logs.concat(P.incidents).flatMap(x => x.photos || [])));
-    F.plan = P; pgShow();
-  } catch(e){ onErr(e); } finally { busy(false); }
-}
-async function pgRun(){
-  if (!isAdmin() || !F.plan) return;
-  const pw = ($("#pgpw") || {}).value || "";
-  if (pw !== PURGE_PW){ toast(T("Sai mật khẩu xoá"), "err"); return; }
-  const P = F.plan, refs = P.logs.map(x => R("logs", x._id)).concat(P.incidents.map(x => R("incidents", x._id)), P.parts.map(x => R("parts", x._id)), P.photos.map(id => R("photos", id)));
-  if (!confirm(T("Xoá vĩnh viễn {n} bản ghi từ {a} đến {b}?", {n: refs.length, a: fmtD(F.from), b: fmtD(F.to)}))) return;
-  busy(true);
-  try {
-    for (let i = 0; i < refs.length; i += 400){ const b = FS.batch(); refs.slice(i, i + 400).forEach(r => b.delete(r)); await withTimeout(b.commit(), 60000); }
-    F.repCache = {}; F.plan = null; F.histFor = "";
-    toast(T("Đã xoá {n} bản ghi", {n: refs.length}), "ok"); pgShow();
-  } catch(e){
-    if (e && e.code === "permission-denied") toast(T("Security Rules đang chặn việc xoá. Cần cho phép xoá trong Firestore Rules."), "err"); else onErr(e);
-  } finally { busy(false); }
 }
 
 /* ---- Cài đặt ---- */
@@ -1642,28 +1589,9 @@ window.addEventListener("hashchange", () => {
 
 /* ================== TỪ ĐIỂN TIẾNG NHẬT ================== */
 const JA = {
-"không bắt buộc, tối đa 3 ảnh": "任意・最大3枚",
-"Nhập mô tả sự cố": "不具合の内容を入力してください",
-"Xoá dữ liệu theo thời gian": "期間指定でデータ削除",
-"Chỉ Quản trị, cần mật khẩu": "管理者のみ・パスワード必要",
-"Nhật ký bảo trì": "保全記録",
-"Sự cố đã xong (kèm ảnh)": "完了済みの異常（写真含む）",
-"Dữ liệu bị xoá không khôi phục được. Nên xuất Excel trước khi xoá.": "削除したデータは復元できません。削除前にExcel出力をお勧めします。",
-"Từ ngày": "開始日",
-"Đến ngày": "終了日",
-"Loại dữ liệu cần xoá": "削除するデータの種類",
-"Không xoá: danh sách máy, kế hoạch, tài khoản, danh mục. Sự cố chưa sửa xong hoặc đang chờ duyệt được giữ lại.": "設備一覧・計画・アカウント・マスタは削除しません。未修理または承認待ちの異常は残ります。",
-"Kiểm tra số lượng sẽ xoá": "削除件数を確認",
-"Từ {a} đến {b} sẽ xoá:": "{a}〜{b} の削除対象：",
-"Mật khẩu xoá": "削除パスワード",
-"XOÁ {n} BẢN GHI": "{n} 件を削除",
-"Không có dữ liệu nào trong khoảng này.": "この期間のデータはありません。",
-"Khoảng ngày không hợp lệ": "期間が正しくありません",
-"Chọn ít nhất một loại dữ liệu": "データの種類を1つ以上選んでください",
-"Sai mật khẩu xoá": "削除パスワードが違います",
-"Xoá vĩnh viễn {n} bản ghi từ {a} đến {b}?": "{a}〜{b} の {n} 件を完全に削除しますか？",
-"Đã xoá {n} bản ghi": "{n} 件を削除しました",
-"Security Rules đang chặn việc xoá. Cần cho phép xoá trong Firestore Rules.": "Security Rulesで削除がブロックされています。Firestore Rulesで削除を許可してください。",
+"BẢN XEM THỬ": "デモ版",
+"Dữ liệu mẫu, không lưu": "サンプルデータ・保存されません",
+"Bản xem thử: dùng thanh trên cùng để đổi vai trò": "デモ版：上部のバーで役割を切り替えてください",
 
 "— Chọn mã hàng —": "— 品番を選択 —",
 "Chưa có mã hàng. Thêm trong Cài đặt danh mục → Mã hàng máy đan.": "品番が未登録です。マスタ設定 → 編み機の品番 で追加してください。",
@@ -2115,7 +2043,205 @@ const JA = {
 "Hạng mục bảo trì ": "保全項目"
 };
 
-boot();
+
+/* ================== BẢN XEM THỬ ================== */
+/* Firestore giả: dữ liệu chỉ nằm trong bộ nhớ trình duyệt, tải lại trang là về dữ liệu mẫu ban đầu */
+(function(){
+  const store = {}, listeners = [];
+  const snap = id => ({id, ref: ref(id), exists: id in store, data: () => store[id] ? JSON.parse(JSON.stringify(store[id])) : undefined});
+  let pend = false;
+  const notify = () => { if (pend) return; pend = true; setTimeout(() => { pend = false; listeners.slice().forEach(l => l()); }, 0); };
+  function query(conds, lim){
+    const run = () => { let ids = Object.keys(store).filter(id => conds.every(([f, v]) => store[id][f] === v)); if (lim) ids = ids.slice(0, lim); const docs = ids.map(snap); return {docs, empty: !docs.length}; };
+    return {where: (f, op, v) => query(conds.concat([[f, v]]), lim), limit: n => query(conds, n), get: () => Promise.resolve(run()),
+      onSnapshot(n){ const l = () => n(run()); listeners.push(l); l(); return () => { const i = listeners.indexOf(l); if (i >= 0) listeners.splice(i, 1); }; }};
+  }
+  function ref(id){
+    return {set(d, o){ store[id] = (o && o.merge) ? Object.assign({}, store[id] || {}, d) : Object.assign({}, d); notify(); return Promise.resolve(); },
+      get: () => Promise.resolve(snap(id)), delete(){ delete store[id]; notify(); return Promise.resolve(); },
+      onSnapshot(n){ const l = () => n(snap(id)); listeners.push(l); l(); return () => { const i = listeners.indexOf(l); if (i >= 0) listeners.splice(i, 1); }; }};
+  }
+  const fs = {_reset(){ Object.keys(store).forEach(k => delete store[k]); }, enablePersistence: () => Promise.resolve(), collection(){ const q = query([]); q.doc = ref; return q; },
+    batch(){ const ops = []; return {set: (r, d, o) => ops.push(() => r.set(d, o)), delete: r => ops.push(() => r.delete()), commit(){ ops.forEach(f => f()); return Promise.resolve(); }}; },
+    runTransaction: fn => fn({get: r => r.get(), set: (r, d) => r.set(d)})};
+  window.firebase = {initializeApp(){}, firestore: () => fs};
+})();
+const DEMO_USERS = {
+  admin:   {id: "ADMIN", name: "Quản trị hệ thống", role: "admin"},
+  manager: {id: "QD01",  name: "Đỗ Minh Quang",    role: "manager"},
+  leader:  {id: "TT01",  name: "Phan Văn Lộc",     role: "leader"},
+  worker:  {id: "CN07",  name: "Bùi Văn Hùng",     role: "worker"}
+};
+let DEMO_ROLE = "manager";
+function demoBar(){
+  let b = document.getElementById("demobar");
+  if (!b){ b = document.createElement("div"); b.id = "demobar"; document.body.insertBefore(b, document.body.firstChild); }
+  const lab = {admin: T("Quản trị"), manager: T("Quản đốc"), leader: T("Tổ trưởng"), worker: T("Công nhân")};
+  b.innerHTML = '<span class="dl">' + esc(T("BẢN XEM THỬ")) + '<small>' + esc(T("Dữ liệu mẫu, không lưu")) + '</small></span><div class="seg">' +
+    Object.keys(lab).map(k => '<button class="' + (k === DEMO_ROLE ? "on" : "") + '" onclick="demoRole(\'' + k + '\')">' + esc(lab[k]) + '</button>').join("") + '</div>';
+}
+function demoRole(r){
+  DEMO_ROLE = r; S.user = Object.assign({}, DEMO_USERS[r]); F = {}; PH = [];
+  startLive(); demoBar();
+  try { history.replaceState({view: "home", p: {}, d: 0}, ""); } catch(e){}
+  V = {view: "home", p: {}}; window.scrollTo(0, 0); render();
+}
+function logout(){ toast(T("Bản xem thử: dùng thanh trên cùng để đổi vai trò"), "ok"); }
+const _setLang = setLang; setLang = l => { _setLang(l); demoBar(); demoLoad(); };   // đổi ngôn ngữ: nạp lại dữ liệu mẫu theo ngôn ngữ
+const SJ = {"Bình thường": "異常なし", "Băng tải lệch, găng rơi": "コンベアがずれて手袋が落ちる", "Bạc đạn": "ベアリング", "Bảo dưỡng và nạp cân bằng ắc quy": "バッテリー点検・均等充電", "Bảo trì": "保全", "Chạy thử 5 phút": "5分間試運転", "Chỉnh lực căng sợi, thay lò xo kim": "糸張力を調整、針ばねを交換", "Chỉnh sức căng chỉ, thay kim": "糸調子を調整、針を交換", "Căn chỉnh lại băng tải": "コンベアを再調整", "Cảm biến": "センサー", "Cảm biến không nhận túi": "センサーが袋を検知しない", "Cảm biến đứt sợi báo lỗi liên tục": "糸切れセンサーが頻繁にエラー", "Dao cắt": "カッター刃", "Dao xén cùn": "トリマー刃の切れ味低下", "Dây curoa": "ベルト", "Dây curoa chùng": "ベルトの緩み", "Gãy kim, găng bị thủng lỗ": "針折れ、手袋に穴", "Găng bị lỗ ở ngón trỏ": "人差し指部分に穴", "Khuôn tay": "手型", "Khuôn tay bị nứt": "手型にひび割れ", "Khác": "その他", "Kim gãy liên tục ở ngón cái, găng bị thủng": "親指部分で針折れが続き、手袋に穴", "Kim đan": "編み針", "Kiểm tra an toàn nồi hơi": "ボイラー安全点検", "Kiểm tra bánh răng dẫn": "駆動ギアの点検", "Kiểm tra bơm tuần hoàn": "循環ポンプの点検", "Kiểm tra càng nâng": "フォークの点検", "Kiểm tra cảm biến": "センサーの点検", "Kiểm tra cảm biến nhiệt": "温度センサーの点検", "Kiểm tra cảm biến đứt sợi": "糸切れセンサーの点検", "Kiểm tra dao cắt": "カッター刃の点検", "Kiểm tra dây curoa": "ベルトの点検", "Kiểm tra hệ thống nhiệt": "加熱系統の点検", "Kiểm tra kim & lưỡi gà": "針・ラッチの点検", "Kiểm tra kim gãy, cong": "針の折れ・曲がりを確認", "Kiểm tra kim và chân vịt": "針と押え金の点検", "Kiểm tra lưỡi gà": "ラッチの点検", "Kiểm tra mức dầu máy nén": "コンプレッサー油量の確認", "Kiểm tra mực nước": "水位の確認", "Kiểm tra nhiệt độ lò": "炉温度の点検", "Kiểm tra phanh và còi": "ブレーキ・ホーンの点検", "Kiểm tra quạt tuần hoàn": "循環ファンの点検", "Kiểm tra sơ bộ: không có điện vào motor, nghi cháy cuộn dây": "一次点検：モーターに通電なし、コイル焼損の疑い", "Kiểm tra tiếng ồn khi chạy": "運転時の異音確認", "Kiểm tra tổng quát": "総合点検", "Kiểm tra van an toàn": "安全弁の点検", "Kiểm tra xe nâng": "フォークリフト点検", "Kiểm tra xích tải": "搬送チェーンの点検", "Kiểm tra áp suất (7–8 bar)": "圧力確認（7〜8 bar）", "Kiểm tra điện": "電気点検", "Kiểm tra đầu đốt & quạt": "バーナー・ファンの点検", "Kiểm tra độ căng xích tải": "搬送チェーンの張り確認", "Kiểm tra độ mòn trục in": "印刷ローラーの摩耗確認", "Kiểm tra ắc quy": "バッテリーの点検", "Lò lưu hoá": "加硫炉", "Lò sấy / lò lưu hoá": "乾燥炉・加硫炉", "Lò sấy PVC": "PVC乾燥炉", "Lò xo kim": "針ばね", "Lưỡi gà": "ラッチ", "Lưỡi gà kẹt, găng bỏ mũi": "ラッチ固着、目飛び発生", "Lọc gió": "エアフィルター", "Motor": "モーター", "Motor kéo kêu to bất thường": "駆動モーターから異音", "Motor máy khuấy không khởi động": "撹拌機のモーターが起動しない", "Máy in PVC": "PVC印刷機", "Máy in PVC số 1": "PVC印刷機 1号機", "Máy in PVC số 2": "PVC印刷機 2号機", "Máy in PVC số 3": "PVC印刷機 3号機", "Máy khuấy latex": "ラテックス撹拌機", "Máy may": "ミシン", "Máy may 1 kim số 1": "1本針ミシン 1号機", "Máy may 1 kim số 2": "1本針ミシン 2号機", "Máy may cũ (thanh lý)": "旧ミシン（廃棄予定）", "Máy nhúng cao su": "ゴム浸漬機", "Máy nhúng cao su số 1": "ゴム浸漬機 1号機", "Máy nhúng cao su số 2": "ゴム浸漬機 2号機", "Máy nén khí": "エアコンプレッサー", "Máy vắt sổ": "オーバーロックミシン", "Máy đan": "編み機", "Máy đan găng số 1": "手袋編み機 1号機", "Máy đan găng số 2": "手袋編み機 2号機", "Máy đan găng số 3": "手袋編み機 3号機", "Máy đan găng số 4": "手袋編み機 4号機", "Máy đan găng số 5": "手袋編み機 5号機", "Máy đan găng số 6": "手袋編み機 6号機", "Máy đóng gói": "包装機", "Nhiệt độ khuôn không lên": "型の温度が上がらない", "Nhiệt độ lò dao động": "炉温度が不安定", "Nồi hơi": "ボイラー", "Phát hiện mòn, cần thay": "摩耗あり、交換が必要", "Phớt bơm": "ポンプシール", "Phụ trợ": "ユーティリティ", "Rò latex ở bơm tuần hoàn": "循環ポンプからラテックス漏れ", "Rò rỉ nhẹ, đã báo quản đốc": "軽微な漏れ、職長に報告済み", "Rơ-le nhiệt": "サーマルリレー", "Thay 4 kim đan bị cong": "曲がった編み針4本を交換", "Thay bạc đạn motor": "モーターのベアリングを交換", "Thay cảm biến nhiệt": "温度センサーを交換", "Thay cảm biến quang": "光電センサーを交換", "Thay cảm biến đứt sợi": "糸切れセンサーを交換", "Thay dao xén": "トリマー刃を交換", "Thay dây curoa mới": "新しいベルトに交換", "Thay khuôn tay mới": "新しい手型に交換", "Thay kim hỏng nếu có": "不良針があれば交換", "Thay kim đan": "編み針を交換", "Thay kim đan, chạy thử 20 đôi ổn định": "編み針を交換、20双試運転して問題なし", "Thay lưỡi gà, vệ sinh rãnh kim": "ラッチを交換、針溝を清掃", "Thay lọc gió": "エアフィルター交換", "Thay phớt bơm": "ポンプシールを交換", "Thay rơ-le nhiệt": "サーマルリレーを交換", "Thay thế linh kiện": "部品交換", "Thay van một chiều": "逆止弁を交換", "Thiết bị áp lực: bắt buộc đeo găng chịu nhiệt": "圧力設備：耐熱手袋の着用必須", "Tháo trục, vệ sinh và căn chỉnh lại": "ローラーを外して清掃・再調整", "Thổi bụi xơ sợi": "糸くずのエアブロー", "Tra dầu các ổ trục": "軸受けへの給油", "Tra dầu hộp số": "ギアボックス給油", "Tra dầu kim và rãnh kim": "針・針溝への給油", "Tra dầu máy": "機械への給油", "Tra dầu mỡ": "給油・グリスアップ", "Tra mỡ xích": "チェーンのグリスアップ", "Tra mỡ, thay đoạn xích mòn": "グリスアップ、摩耗したチェーンを交換", "Trục in bị kẹt mực, in mờ": "印刷ローラーのインク詰まり、印刷がかすれる", "Tắt nguồn, treo biển đang bảo trì": "電源を切り、保全中の札を掛ける", "Văn phòng": "事務所", "Vệ sinh": "清掃", "Vệ sinh & kiểm tra dao cắt": "清掃・カッター刃点検", "Vệ sinh & thay kim": "清掃・針交換", "Vệ sinh & tra dầu": "清掃・給油", "Vệ sinh & tra dầu máy đan": "編み機の清掃・給油", "Vệ sinh bồn latex": "ラテックス槽の清掃", "Vệ sinh bụi vải": "布ぼこりの清掃", "Vệ sinh khuôn & trục in": "型・印刷ローラーの清掃", "Vệ sinh khuôn tay": "手型の清掃", "Vệ sinh khuôn và trục in": "型と印刷ローラーを清掃", "Vệ sinh máy": "機械清掃", "Xe nâng": "フォークリフト", "Xe nâng điện": "電動フォークリフト", "Xích tải": "搬送チェーン", "Xích tải bị kẹt": "搬送チェーンが詰まる", "Xích tải kêu to, có lúc bị kẹt": "搬送チェーンから異音、時々詰まる", "Xưởng Cao su": "ゴム工場", "Xưởng May": "縫製工場", "Xưởng PVC": "PVC工場", "Xưởng Đan": "編み工場", "Xả nước bình chứa": "タンクの水抜き", "Xả và vệ sinh bồn latex": "ラテックス槽の排出・清掃", "Xả đáy nồi hơi": "ボイラーのブロー", "Áp suất khí thấp": "空気圧が低い", "Đan": "編み", "Cao su": "ゴム", "May": "縫製", "Kho": "倉庫", "Đo nhiệt độ thực tế các vùng": "各ゾーンの実温度を測定", "Đã gọi thợ điện bên ngoài, hẹn kiểm tra cuộn dây ngày 22/10": "外部の電気業者に依頼、22/10にコイル点検予定", "Đã vệ sinh kỹ": "念入りに清掃済み", "Đã đặt xích mới, dự kiến lắp 23/10": "新しいチェーンを発注済み、23/10取付予定", "Đứt chỉ liên tục": "糸切れが頻発", "Đứt dây curoa chính": "メインベルトが切れた", "Đứt sợi liên tục ở đầu ngón": "指先部分で糸切れが頻発", "Ắc quy sụt nhanh": "バッテリーの減りが早い", "Ổn định": "安定"};
+async function demoLoad(){
+  stopLive(); FS._reset();
+  Object.assign(S, {dev: {}, plans: {}, acc: {}, incOpen: {}, incPend: {}, incMonth: [], logsMonth: [], loaded: {}, cfg: Object.assign({}, DEF_CFG)});
+  F = {}; PH = []; S.user = Object.assign({}, DEMO_USERS.admin);
+  await seed();
+  demoRole(DEMO_ROLE);
+}
+/* ---- Dữ liệu mẫu 6 tháng (sample:true để xoá được) ---- */
+async function seed(){
+  const msg = t => { const e = $("#seedmsg"); if (e) e.textContent = t; };
+  let a = 20261021; const rnd = () => { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; };
+  const pick = L => L[Math.floor(rnd() * L.length)], ri = (x, y) => x + Math.floor(rnd() * (y - x + 1));
+  const now = Date.now(), T0 = today(), ops = [];
+  const add = (c, id, d) => ops.push([c, id, Object.assign({type: TYPES[c], sample: true, createdAt: now, createdBy: S.user.id, updatedAt: now}, d)]);
+  const AREAS = ["Xưởng PVC", "Xưởng Cao su", "Xưởng May", "Kho", "Phụ trợ", "Xưởng Đan"];
+  const DEV = [
+    ["M01","Máy in PVC số 1",0,"Hashima","HP-800","2019-04-01"],["M02","Máy in PVC số 2",0,"Hashima","HP-800","2019-04-01"],["M03","Máy in PVC số 3",0,"Hashima","HP-1000","2022-08-15"],
+    ["M04","Lò sấy PVC",0,"Daiwa","DR-12","2019-04-01"],["M05","Máy nhúng cao su số 1",1,"Shin-Etsu","DP-6","2018-10-01"],["M06","Máy nhúng cao su số 2",1,"Shin-Etsu","DP-6","2020-03-01"],
+    ["M07","Lò lưu hoá",1,"Daiwa","VC-20","2018-10-01"],["M08","Máy khuấy latex",1,"Satake","MX-300","2018-10-01"],["M09","Máy may 1 kim số 1",2,"Juki","DDL-8700","2021-01-10"],
+    ["M10","Máy may 1 kim số 2",2,"Juki","DDL-8700","2021-01-10"],["M11","Máy vắt sổ",2,"Juki","MO-6800","2021-01-10"],["M12","Máy nén khí",4,"Hitachi","OSP-37","2018-10-01"],
+    ["M13","Nồi hơi",4,"Miura","EX-1000","2018-10-01"],["M14","Xe nâng điện",3,"Toyota","8FBN15","2020-06-01"],["M15","Máy đóng gói",3,"Fuji","FW-3400","2022-02-01"],["M16","Máy may cũ (thanh lý)",2,"Brother","S-7100","2015-05-01"],
+    ["M17","Máy đan găng số 1",5,"Shima Seiki","SFG-I","2020-05-01","13G"],["M18","Máy đan găng số 2",5,"Shima Seiki","SFG-I","2020-05-01","13G"],["M19","Máy đan găng số 3",5,"Shima Seiki","SFG-I","2021-03-01","10G"],
+    ["M20","Máy đan găng số 4",5,"Shima Seiki","SFG-I","2021-03-01","15G"],["M21","Máy đan găng số 5",5,"Shima Seiki","SFG","2019-08-01","7G"],["M22","Máy đan găng số 6",5,"Shima Seiki","SFG-I","2023-01-10","13G"]];
+  const GRP = {M01:"Máy in PVC",M02:"Máy in PVC",M03:"Máy in PVC",M04:"Lò sấy / lò lưu hoá",M05:"Máy nhúng cao su",M06:"Máy nhúng cao su",M07:"Lò sấy / lò lưu hoá",M08:"Khác",
+    M09:"Máy may",M10:"Máy may",M11:"Máy may",M12:"Máy nén khí",M13:"Nồi hơi",M14:"Xe nâng",M15:"Máy đóng gói",M16:"Máy may"};
+  const W = [["CN07","Bùi Văn Hùng",5],["CN01","Nguyễn Văn An",0],["CN02","Trần Thị Bình",0],["CN03","Lê Văn Cường",1],["CN04","Phạm Thị Dung",1],["CN05","Hoàng Văn Em",2],["CN06","Võ Thị Phương",4]];
+  const code = m => "KCB-" + m, dname = {};
+  DEV.forEach(d => { dname[code(d[0])] = d[1]; if (!S.dev[code(d[0])]) add("devices", code(d[0]), {code: code(d[0]), group: d[6] ? "Máy đan" : GRP[d[0]], gauge: d[6] || "", name: d[1], area: AREAS[d[2]], maker: d[3], model: d[4], since: d[5], status: d[0] === "M16" ? "off" : "ok", note: ""}); });
+  const DEPT = ["PVC", "Cao su", "May", "Bảo trì", "Bảo trì", "Đan"];
+  // mã hàng máy đan: lịch sử từ cũ đến mới, mã cuối là mã đang chạy
+  const PRODS = ["GK13-NT01", "GK13-PU02", "GK10-CT01", "GK15-NT03", "GK07-CT02", "GK13-LX05"];
+  const PH = {M17: ["GK13-PU02", "GK13-NT01"], M18: ["GK13-NT01", "GK13-PU02", "GK13-NT01"], M19: ["GK10-CT01"], M20: ["GK15-NT03"], M21: ["GK07-CT02"], M22: []};
+  Object.entries(PH).forEach(([m, L]) => {
+    const dev = code(m), d = DEV.find(x => x[0] === m); let from = "", at = 0;
+    L.forEach((p, k) => { at = now - (L.length - k) * ri(18, 40) * 864e5 + ri(0, 8) * 3600e3;
+      from = p; });
+    const i = ops.findIndex(o => o[0] === "devices" && o[1] === dev);
+    if (i >= 0 && L.length) Object.assign(ops[i][2], {product: from, productSince: at, productBy: "Đỗ Minh Quang"});
+  });
+  const accs = [["QD01", "Đỗ Minh Quang", "manager", "Bảo trì", "2222"], ["TT01", "Phan Văn Lộc", "leader", "Đan", "3333"]].concat(W.map(w => [w[0], w[1], "worker", DEPT[w[2]], "1111"]));
+  for (const [id, name, role, dept, pin] of accs){ if (S.acc[id]) continue; const salt = uid(); add("accounts", id, {name, role, dept, active: true, salt, hash: await sha256(salt + ":" + pin)}); }
+  const STEPS = {
+    pvc: ["Tắt nguồn, treo biển đang bảo trì", "Vệ sinh khuôn và trục in", "Kiểm tra độ mòn trục in", "Chạy thử 5 phút"],
+    oil: ["Tra dầu các ổ trục", "Kiểm tra dây curoa", "Kiểm tra tiếng ồn khi chạy"],
+    heat: ["Đo nhiệt độ thực tế các vùng", "Kiểm tra cảm biến nhiệt", "Kiểm tra quạt tuần hoàn"],
+    latex: ["Xả và vệ sinh bồn latex", "Vệ sinh khuôn tay", "Kiểm tra bơm tuần hoàn"],
+    chain: ["Kiểm tra độ căng xích tải", "Tra mỡ xích", "Kiểm tra bánh răng dẫn"],
+    sew: ["Vệ sinh bụi vải", "Tra dầu máy", "Kiểm tra kim và chân vịt"],
+    air: ["Xả nước bình chứa", "Kiểm tra áp suất (7–8 bar)"],
+    filter: ["Thay lọc gió", "Kiểm tra mức dầu máy nén"],
+    boiler: ["Kiểm tra van an toàn", "Kiểm tra mực nước", "Xả đáy nồi hơi"],
+    fork: ["Kiểm tra ắc quy", "Kiểm tra phanh và còi", "Kiểm tra càng nâng"],
+    pack: ["Vệ sinh máy", "Kiểm tra dao cắt", "Kiểm tra cảm biến"],
+    knit: ["Thổi bụi xơ sợi", "Tra dầu kim và rãnh kim", "Kiểm tra cảm biến đứt sợi"],
+    needle: ["Kiểm tra kim gãy, cong", "Kiểm tra lưỡi gà", "Thay kim hỏng nếu có"]};
+  const P = [["M01","Vệ sinh khuôn & trục in","pvc","week",1,"CN01"],["M01","Tra dầu mỡ","oil","month",1,"CN01"],["M02","Vệ sinh khuôn & trục in","pvc","week",1,"CN02"],["M02","Kiểm tra hệ thống nhiệt","heat","month",1,"CN02"],
+    ["M03","Vệ sinh khuôn & trục in","pvc","week",1,"CN02"],["M04","Kiểm tra đầu đốt & quạt","heat","month",1,"",3],["M05","Vệ sinh bồn latex","latex","week",1,"CN03"],["M05","Kiểm tra xích tải","chain","month",1,"CN03"],
+    ["M06","Vệ sinh bồn latex","latex","week",1,"CN04"],["M07","Kiểm tra nhiệt độ lò","heat","month",1,"CN04"],["M08","Tra dầu hộp số","oil","month",3,""],["M09","Vệ sinh & tra dầu","sew","week",2,"CN05"],
+    ["M10","Vệ sinh & tra dầu","sew","week",2,"CN05"],["M11","Vệ sinh & thay kim","sew","month",1,"CN05"],["M12","Xả nước bình chứa","air","day",1,"CN06"],["M12","Thay lọc gió","filter","month",3,"CN06"],
+    ["M13","Kiểm tra an toàn nồi hơi","boiler","week",1,"CN06"],["M14","Kiểm tra xe nâng","fork","week",1,"CN06",1],["M15","Vệ sinh & kiểm tra dao cắt","pack","month",1,""],
+    ["M17","Vệ sinh & tra dầu máy đan","knit","week",1,"CN07"],["M17","Kiểm tra kim & lưỡi gà","needle","month",1,"CN07"],["M18","Vệ sinh & tra dầu máy đan","knit","week",1,"CN07"],["M18","Kiểm tra kim & lưỡi gà","needle","month",1,"CN07"],
+    ["M19","Vệ sinh & tra dầu máy đan","knit","week",1,"CN07"],["M19","Kiểm tra kim & lưỡi gà","needle","month",1,"CN07"],["M20","Vệ sinh & tra dầu máy đan","knit","week",1,"CN07"],["M20","Kiểm tra kim & lưỡi gà","needle","month",1,"CN07"],
+    ["M21","Vệ sinh & tra dầu máy đan","knit","week",1,"CN07"],["M22","Vệ sinh & tra dầu máy đan","knit","week",1,"CN07"],["M22","Kiểm tra kim & lưỡi gà","needle","month",1,"CN07"]];
+  const partDoc = (dev, at, name, qty, src, srcId, by) => { const d = DEV.find(x => code(x[0]) === dev), day = ymd(new Date(at));
+    add("parts", "M" + uid() + Math.floor(rnd() * 1e6), {devId: dev, devName: dname[dev], group: d[6] ? "Máy đan" : GRP[d[0]], gauge: d[6] || "", area: AREAS[d[2]], name, qty, src, srcId, by: by[0], byName: by[1], at, date: day, month: day.slice(0, 7)}); };
+  const start = ymd(new Date(now - 182 * 864e5)), wById = {}; W.forEach(w => wById[w[0]] = w);
+  const atOn = (d, h1, h2) => { const x = parseD(d); x.setHours(ri(h1, h2), ri(0, 59)); return x.getTime(); };
+  let nLog = 0;
+  P.forEach(p => {
+    const dev = code(p[0]), pid = "M" + uid(), steps = STEPS[p[2]];
+    const span = {day: 1, week: 7 * p[4], month: 28 * p[4], year: 300}[p[3]];
+    let due = ymd(new Date(parseD(start).getTime() + ri(0, span - 1) * 864e5)), last = "", lastBy = "", stopAt = "";
+    if (p[6]){   // cố ý để kế hoạch này trễ p[6] ngày (cho bản demo)
+      stopAt = ymd(new Date(now - p[6] * 864e5)); let d = stopAt;
+      while (d >= start){ const x = parseD(d); if (p[3] === "month") x.setMonth(x.getMonth() - p[4]); else x.setDate(x.getDate() - (p[3] === "week" ? 7 * p[4] : 1)); d = ymd(x); }
+      due = addCycle(d, p[4], p[3]);
+    }
+    while (due < T0 && due !== stopAt){
+      const age = daysBetween(due, T0), lateP = age > 120 ? .3 : age > 60 ? .18 : .08;   // xu hướng cải thiện dần
+      const delay = rnd() < lateP ? ri(1, 5) : 0, done = ymd(new Date(parseD(due).getTime() + delay * 864e5));
+      if (done >= T0) break;
+      const who = p[5] ? wById[p[5]] : pick(W), ng = rnd() < .04;
+      const ck = steps.map(t => ({t, ok: !ng || rnd() < .6}));
+      const logId = "M" + uid() + nLog++, lat = atOn(done, 7, 16), lparts = [];
+      if (p[2] === "needle"){ if (rnd() < .65) lparts.push({n: "Kim đan", q: ri(2, 12)}); if (rnd() < .3) lparts.push({n: "Lưỡi gà", q: ri(1, 4)}); }
+      if (p[2] === "filter") lparts.push({n: "Lọc gió", q: 1});
+      lparts.forEach(r => partDoc(dev, lat, r.n, r.q, "log", logId, who));
+      add("logs", logId, {planId: pid, parts: lparts, devId: dev, devName: dname[dev], task: p[1], steps: ck, result: ng ? "ng" : "ok",
+        note: ng ? pick(["Phát hiện mòn, cần thay", "Dây curoa chùng", "Rò rỉ nhẹ, đã báo quản đốc"]) : (rnd() < .1 ? pick(["Bình thường", "Đã vệ sinh kỹ", "Ổn định"]) : ""),
+        photos: [], due, late: delay > 0, by: who[0], byName: who[1], at: lat, date: done, month: done.slice(0, 7)});
+      last = done; lastBy = who[1];
+      let nx = due; do { nx = addCycle(nx, p[4], p[3]); } while (nx <= done); due = nx;
+    }
+    add("plans", pid, {devId: dev, task: p[1], steps, unit: p[3], every: p[4], nextDue: due, assignee: p[5], note: p[2] === "boiler" ? "Thiết bị áp lực: bắt buộc đeo găng chịu nhiệt" : "", active: true, lastDone: last, lastBy});
+  });
+  const INC = [["M17","Gãy kim, găng bị thủng lỗ","Thay kim đan, chạy thử 20 đôi ổn định",[["Kim đan",[3,10]]]],["M19","Lưỡi gà kẹt, găng bỏ mũi","Thay lưỡi gà, vệ sinh rãnh kim",[["Lưỡi gà",[2,6]]]],
+    ["M18","Đứt sợi liên tục ở đầu ngón","Chỉnh lực căng sợi, thay lò xo kim",[["Lò xo kim",[2,5]]]],["M20","Đứt dây curoa chính","Thay dây curoa mới",[["Dây curoa",[1,1]]]],
+    ["M01","Motor kéo kêu to bất thường","Thay bạc đạn motor",[["Bạc đạn",[2,2]]]],["M22","Gãy kim, găng bị thủng lỗ","Thay kim đan",[["Kim đan",[2,8]]]],["M05","Rò latex ở bơm tuần hoàn","Thay phớt bơm",[["Phớt bơm",[1,1]]]],
+    ["M02","Nhiệt độ khuôn không lên","Thay rơ-le nhiệt",[["Rơ-le nhiệt",[1,1]]]],["M06","Khuôn tay bị nứt","Thay khuôn tay mới",[["Khuôn tay",[2,6]]]],["M07","Nhiệt độ lò dao động","Thay cảm biến nhiệt",[["Cảm biến",[1,1]]]],
+    ["M21","Cảm biến đứt sợi báo lỗi liên tục","Thay cảm biến đứt sợi",[["Cảm biến",[1,1]]]],["M05","Xích tải bị kẹt","Tra mỡ, thay đoạn xích mòn",[["Xích tải",[1,1]]]],["M09","Đứt chỉ liên tục","Chỉnh sức căng chỉ, thay kim",[["Kim may",[2,4]]]],
+    ["M01","Trục in bị kẹt mực, in mờ","Tháo trục, vệ sinh và căn chỉnh lại",[]],["M03","Băng tải lệch, găng rơi","Căn chỉnh lại băng tải",[]],["M11","Dao xén cùn","Thay dao xén",[["Dao cắt",[1,1]]]],
+    ["M12","Áp suất khí thấp","Thay van một chiều",[]],["M14","Ắc quy sụt nhanh","Bảo dưỡng và nạp cân bằng ắc quy",[]],["M15","Cảm biến không nhận túi","Thay cảm biến quang",[["Cảm biến",[1,1]]]]];
+  const QD = "Đỗ Minh Quang", wOf = m => { const d = DEV.find(x => x[0] === m); return W.find(w => w[2] === d[2]) || pick(W); };
+  for (let k = 0; k < 42; k++){
+    const it = INC[Math.min(INC.length - 1, Math.floor(Math.pow(rnd(), 1.6) * INC.length))];   // vài máy hỏng nhiều hơn
+    const day = ymd(new Date(now - ri(3, 180) * 864e5)), at = atOn(day, 7, 17), w = wOf(it[0]);
+    const dur = (rnd() < .75 ? ri(30, 360) : ri(600, 3600)) * 60000, fixAt = Math.min(at + dur, now - 3600e3);
+    const incId = "M" + uid() + k, fixBy = w, ip = it[3].map(([n, r]) => ({n, q: ri(r[0], r[1])}));
+    ip.forEach(r => partDoc(code(it[0]), fixAt, r.n, r.q, "inc", incId, fixBy));
+    add("incidents", incId, {devId: code(it[0]), devName: dname[code(it[0])], area: AREAS[DEV.find(x => x[0] === it[0])[2]], desc: it[1], photos: [], status: "done", open: false,
+      fix: it[2], parts: ip, partsSaved: true, next: "", by: w[0], byName: w[1], at, date: day, month: day.slice(0, 7), fixAt, fixBy: fixBy[1], appr: true, apprBy: QD, apprById: "QD01", apprAt: fixAt});
+  }
+  [["M05","Xích tải kêu to, có lúc bị kẹt",1,["Đã đặt xích mới, dự kiến lắp 23/10"]],
+   ["M08","Motor máy khuấy không khởi động",4,["Kiểm tra sơ bộ: không có điện vào motor, nghi cháy cuộn dây","Đã gọi thợ điện bên ngoài, hẹn kiểm tra cuộn dây ngày 22/10"]]].forEach(([m, desc, ago, notes], k) => {
+    const day = ymd(new Date(now - ago * 864e5)), w = wOf(m), at = atOn(day, 7, 10);
+    const nextLog = notes.map((t, n) => ({t, by: w[1], at: Math.min(at + (2 + n * 26) * 3600e3, now - 3600e3)}));
+    const last = nextLog[nextLog.length - 1];
+    add("incidents", "MOPEN" + k + uid(), {devId: code(m), devName: dname[code(m)], area: AREAS[DEV.find(x => x[0] === m)[2]], desc, photos: [], status: "open", open: true, fix: "",
+      next: last.t, nextBy: w[1], nextAt: last.at, nextLog, by: w[0], byName: w[1], at, date: day, month: day.slice(0, 7), appr: false, apprBy: "", apprById: "", apprAt: null});
+  });
+  // 2 báo cáo đang chờ quản đốc duyệt
+  { const at1 = now - 3 * 3600e3, d1 = ymd(new Date(at1));
+    add("incidents", "MPEND1" + uid(), {devId: "KCB-M19", devName: dname["KCB-M19"], area: "Xưởng Đan", desc: "Kim gãy liên tục ở ngón cái, găng bị thủng", photos: [], status: "open", open: true, fix: "", next: "",
+      by: "TT01", byName: "Phan Văn Lộc", byRole: "leader", at: at1, date: d1, month: d1.slice(0, 7), appr: false, apprBy: "", apprById: "", apprAt: null});
+    const at2 = now - 90 * 60e3, d2 = ymd(new Date(at2));
+    add("incidents", "MPEND2" + uid(), {devId: "KCB-M18", devName: dname["KCB-M18"], area: "Xưởng Đan", desc: "Găng bị lỗ ở ngón trỏ", photos: [], status: "done", open: false, fix: "Thay 4 kim đan bị cong",
+      parts: [{n: "Kim đan", q: 4}], partsSaved: false, next: "", by: "CN07", byName: "Bùi Văn Hùng", byRole: "worker", at: at2, date: d2, month: d2.slice(0, 7), fixAt: at2 + 20 * 60e3, fixBy: "Bùi Văn Hùng",
+      appr: false, apprBy: "", apprById: "", apprAt: null}); }
+  ops.push(["config", "main", {type: "config", products: PRODS, areas: Array.from(new Set((S.cfg.areas || []).concat(AREAS))), updatedAt: now}, true]);
+  if (LANG === "ja"){
+    const tr = v => typeof v === "string" ? (SJ[v] || v) : Array.isArray(v) ? v.map(tr) : (v && typeof v === "object") ? Object.fromEntries(Object.entries(v).map(([k, x]) => [k, tr(x)])) : v;
+    ops.forEach(o => { o[2] = tr(o[2]); });
+    ops.push(["config", "main", {type: "config", groups: DEF_CFG.groups.map(tr), parts: DEF_CFG.parts.map(tr), depts: DEF_CFG.depts.map(tr), kinds: DEF_CFG.kinds.map(tr), updatedAt: now}, true]);
+  }
+  busy(true);
+  try {
+    for (let i = 0; i < ops.length; i += 400){
+      const b = FS.batch();
+      ops.slice(i, i + 400).forEach(([c, id, d, merge]) => merge ? b.set(R(c, id), d, {merge: true}) : b.set(R(c, id), d));
+      
+      await withTimeout(b.commit(), 60000);
+    }
+    msg("");
+  } catch(e){ onErr(e); msg(""); } finally { busy(false); }
+}
+
+async function demoBoot(){
+  document.documentElement.lang = LANG;
+  FS = firebase.firestore(); COL = FS.collection(COLLECTION);
+  await demoLoad();
+}
+
+demoBoot();
 </script>
 </body>
 </html>
